@@ -1,0 +1,16 @@
+def is_leap(year):
+    leap = False
+    if year%4 !=0:
+        pass
+    elif year%4 ==0:
+        leap=True
+        if year%100 ==0:
+            if year%400==0:
+                pass
+            else:
+                leap=False
+        else:
+            pass
+        
+    
+    return leap
