@@ -1,0 +1,18 @@
+
+if __name__ == '__main__':
+    nl = []
+    sr = []
+
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        nl.append([name, score])
+        sr.append(score)
+
+    sr = sorted(set(sr))
+    a = sr[1]
+
+    na = sorted([j[0] for j in nl if j[1] == a])
+
+    for i in na:
+        print(i)
